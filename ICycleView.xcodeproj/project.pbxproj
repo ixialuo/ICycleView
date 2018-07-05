@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21006BBCBDAFC67152C778E /* Pods_ICycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35DCF74642D915FE1BFCEFC /* Pods_ICycleView.framework */; };
 		CE0338C420EE6759002A5A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0338C320EE6759002A5A3A /* AppDelegate.swift */; };
 		CE0338C620EE6759002A5A3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0338C520EE6759002A5A3A /* ViewController.swift */; };
 		CE0338C920EE6759002A5A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0338C720EE6759002A5A3A /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D16C7A189515E4B7B81B9F /* Pods-ICycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICycleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICycleView/Pods-ICycleView.debug.xcconfig"; sourceTree = "<group>"; };
+		91258E7394FC7A0A04EE65CD /* Pods-ICycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICycleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICycleView/Pods-ICycleView.release.xcconfig"; sourceTree = "<group>"; };
 		CE0338C020EE6759002A5A3A /* ICycleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICycleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0338C320EE6759002A5A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0338C520EE6759002A5A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CE0338CA20EE6759002A5A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0338CD20EE6759002A5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0338CF20EE6759002A5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35DCF74642D915FE1BFCEFC /* Pods_ICycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21006BBCBDAFC67152C778E /* Pods_ICycleView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E35EBAE7A2A328003B98DF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30D16C7A189515E4B7B81B9F /* Pods-ICycleView.debug.xcconfig */,
+				91258E7394FC7A0A04EE65CD /* Pods-ICycleView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B682071EF69665BF61E012A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F35DCF74642D915FE1BFCEFC /* Pods_ICycleView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE0338B720EE6759002A5A3A = {
 			isa = PBXGroup;
 			children = (
 				CE0338C220EE6759002A5A3A /* ICycleView */,
 				CE0338C120EE6759002A5A3A /* Products */,
+				9E35EBAE7A2A328003B98DF1 /* Pods */,
+				B682071EF69665BF61E012A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0338D220EE6759002A5A3A /* Build configuration list for PBXNativeTarget "ICycleView" */;
 			buildPhases = (
+				09C25B3ADCDB28D011E17683 /* [CP] Check Pods Manifest.lock */,
 				CE0338BC20EE6759002A5A3A /* Sources */,
 				CE0338BD20EE6759002A5A3A /* Frameworks */,
 				CE0338BE20EE6759002A5A3A /* Resources */,
+				8B2976D23A4B853ADE169A81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09C25B3ADCDB28D011E17683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICycleView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B2976D23A4B853ADE169A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ICycleView/Pods-ICycleView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICycleView/Pods-ICycleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE0338BC20EE6759002A5A3A /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		CE0338D320EE6759002A5A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D16C7A189515E4B7B81B9F /* Pods-ICycleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +362,7 @@
 		};
 		CE0338D420EE6759002A5A3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91258E7394FC7A0A04EE65CD /* Pods-ICycleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
