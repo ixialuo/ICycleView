@@ -11,7 +11,7 @@ ICycleView是一个基于UICollectionView封装的轻量级图片无限轮播控
 - [Usage](#usage)
     - [默认滚动视图](#默认滚动视图)
     - [自定义图片宽度和指示器的位置和颜色](#自定义图片宽度和指示器的位置和颜色)
-    - [自定义Cell(纯代码和Xib创建都支持)](#自定义Cell（纯代码和Xib创建都支持）)
+    - [自自定义Cell（纯代码和Xib创建都支持）](#自定义Cell（纯代码和Xib创建都支持）)
 - [Contact](#contact)
 - [License](#license)
 
