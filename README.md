@@ -2,7 +2,9 @@
 
 ICycleView是一个用于Swift语言中轻量级图片无限轮播
 
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](DemoResources/icycleView.mp4)
+<p align="center" >
+<img src="/DemoResources/icycleView.gif" title="效果图">
+</p>
 
 ## Support
 
