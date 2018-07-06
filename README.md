@@ -14,8 +14,13 @@ ICycleView是一个用于Swift语言中轻量级图片无限轮播
 * 支持图片点击回调
 * 支持图片滚动回调
 
+# Requirements
 
-# CocoaPods
+* iOS 8.0+
+
+* Swift 4.0+
+
+
 # [CocoaPods](http://cocoapods.org)
 
 ```ruby
@@ -105,5 +110,11 @@ extension ViewController: ICycleViewDelegate {
 
 
 # Contact
+
 QQ: 2256472253<br>
 Email: ixialuo@126.com
+
+
+# License
+
+ICycleView is released under the MIT license. [See LICENSE](LICENSE) for details.
