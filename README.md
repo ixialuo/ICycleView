@@ -2,11 +2,19 @@
 
 ICycleView是一个用于Swift语言中轻量级图片无限轮播
 
-### 现有轮播图
-* 不支持单张图片，单张图片时也滚动
-* 滚动指示器位置不能精确到自己想要的位置
+## Support
 
-### 简单实例
+* 支持单张图片
+* 支持滚动图片宽度设置
+* 支持本地图片显示，网路图显示，本地图片和网路图混合显示
+* 支持自定义图片展示Cell(纯代码和Xib创建都支持)
+* 支持UIPageControl具体位置设置
+* 支持UIPageControl显示颜色设置
+* 支持图片点击回调
+* 支持图片滚动回调
+
+
+## Example
 
 * 默认滚动视图
 ```swift 
@@ -77,6 +85,6 @@ func iCycleView(cycleView: ICycleView, collectionView: UICollectionView, cellFor
 }
 ```
 
-### 联系方式
+## Contact
 QQ: 2256472253<br>
 Email: ixialuo@126.com
