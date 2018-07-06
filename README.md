@@ -2,9 +2,6 @@
 
 ICycleView是一个用于Swift语言中轻量级图片无限轮播
 
-<p align="center" >
-<img src="/DemoResources/icycleView.gif" title="效果图">
-</p>
 
 ## Support
 
@@ -16,6 +13,7 @@ ICycleView是一个用于Swift语言中轻量级图片无限轮播
 * 支持UIPageControl显示颜色设置
 * 支持图片点击回调
 * 支持图片滚动回调
+
 
 ## CocoaPods
 
@@ -99,6 +97,7 @@ extension ViewController: ICycleViewDelegate {
 
 }
 ```
+
 
 ## Contact
 QQ: 2256472253<br>
