@@ -11,7 +11,7 @@ ICycleView是一个用于Swift语言中轻量级图片无限轮播
 - [Usage](#usage)
     - [默认滚动视图](#默认滚动视图)
     - [自定义图片宽度和指示器的位置和颜色](#自定义图片宽度和指示器的位置和颜色)
-    - [自定义Cell(纯代码和Xib创建都支持)](#自定义Cell(纯代码和Xib创建都支持))
+    - [自定义Cell(纯代码和Xib创建都支持)](#自定义Cell（纯代码和Xib创建都支持）)
 - [Contact](#contact)
 - [License](#license)
 
@@ -78,7 +78,7 @@ customPagetrolPositionnCycleView.pageControlStyle = .bottom(bottom: -20)
 customPagetrolPositionnCycleView.pageControlStyle = .right(trailing: 30*scaleForPlus)
 ```
 
-#### 自定义Cell(纯代码和Xib创建都支持)
+#### 自定义Cell（纯代码和Xib创建都支持）
 ```swift
 // 惰性初始化滚动视图
 lazy var customPictureCellCycleView: ICycleView = {
