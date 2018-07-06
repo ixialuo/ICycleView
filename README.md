@@ -66,22 +66,27 @@ customPictureCellCycleView.pictures = pictures
 /**
  - 协议方法都是可选方法，根据需要实现即可
  */
-// 图片点击
-func iCycleView(cycleView: ICycleView, didSelectItemAt index: Int) {
-    print("你点击了第 \(index) 张图片")
-}
+// MARK: ICycleViewDelegate
+extension ViewController: ICycleViewDelegate {
 
-// 图片自动滚动
-func iCycleView(cycleView: ICycleView, autoScrollingItemAt index: Int) {
-    print("当前滚动的图片是第 \(index) 张")
-}
+    // 图片点击
+    func iCycleView(cycleView: ICycleView, didSelectItemAt index: Int) {
+        print("你点击了第 \(index) 张图片")
+    }
 
-// 自定义Cell
-func iCycleView(cycleView: ICycleView, collectionView: UICollectionView, cellForItemAt indexPath: IndexPath, picture: String) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCycleViewCell
-    cell.imgView.kf.setImage(with: URL(string: picture))
-    cell.titleLab.text = "自定义Cell\n第 \(indexPath.item) 张图片"
-    return cell
+    // 图片自动滚动
+    func iCycleView(cycleView: ICycleView, autoScrollingItemAt index: Int) {
+        print("当前滚动的图片是第 \(index) 张")
+    }
+
+    // 自定义Cell
+    func iCycleView(cycleView: ICycleView, collectionView: UICollectionView, cellForItemAt indexPath: IndexPath, picture: String) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCycleViewCell
+        cell.imgView.kf.setImage(with: URL(string: picture))
+        cell.titleLab.text = "自定义Cell\n第 \(indexPath.item) 张图片"
+        return cell
+    }
+
 }
 ```
 
