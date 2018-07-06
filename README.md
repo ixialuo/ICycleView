@@ -16,6 +16,7 @@ ICycleView是一个用于Swift语言中轻量级图片无限轮播
 
 
 # CocoaPods
+# [CocoaPods](http://cocoapods.org)
 
 ```ruby
 pod 'ICycleView', '~> 1.0.0'
