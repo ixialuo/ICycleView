@@ -3,7 +3,7 @@
 ICycleView是一个用于Swift语言中轻量级图片无限轮播
 
 
-## Support
+# Features
 
 * 支持单张图片
 * 支持滚动图片宽度设置
@@ -15,7 +15,7 @@ ICycleView是一个用于Swift语言中轻量级图片无限轮播
 * 支持图片滚动回调
 
 
-## CocoaPods
+# CocoaPods
 
 ```ruby
 pod 'ICycleView', '~> 1.0.0'
@@ -26,9 +26,9 @@ pod 'ICycleView', '~> 1.0.0'
 2：`$rm ~/Library/Caches/CocoaPods/search_index.json`
 
 
-## Example
+# Example
 
-* 默认滚动视图
+#### 默认滚动视图
 ```swift 
 // 惰性初始化滚动视图
 lazy var defaultCycleView: ICycleView = {
@@ -41,7 +41,7 @@ lazy var defaultCycleView: ICycleView = {
 defaultCycleView.pictures = pictures
 ```
 
-* 自定义图片宽度和指示器的位置和颜色
+#### 自定义图片宽度和指示器的位置和颜色
 ```swift
 // 惰性初始化滚动视图
 lazy var customPagetrolPositionnCycleView: ICycleView = {
@@ -59,7 +59,7 @@ customPagetrolPositionnCycleView.pageControlStyle = .bottom(bottom: -20)
 customPagetrolPositionnCycleView.pageControlStyle = .right(trailing: 30*scaleForPlus)
 ```
 
-* 自定义Cell(纯代码和Xib创建都支持)
+#### 自定义Cell(纯代码和Xib创建都支持)
 ```swift
 // 惰性初始化滚动视图
 lazy var customPictureCellCycleView: ICycleView = {
@@ -103,6 +103,6 @@ extension ViewController: ICycleViewDelegate {
 ```
 
 
-## Contact
+# Contact
 QQ: 2256472253<br>
 Email: ixialuo@126.com
