@@ -5,15 +5,24 @@ ICycleView是一个基于UICollectionView封装的轻量级图片无限轮播控
 
 # Content
 
+- [Implementation](#implementation)
 - [Features](#features)
 - [Requirements](#requirements)
 - [CocoaPods](#cocoapods)
 - [Usage](#usage)
     - [默认滚动视图](#默认滚动视图)
     - [自定义图片宽度和指示器的位置和颜色](#自定义图片宽度和指示器的位置和颜色)
-    - [自自定义Cell（纯代码和Xib创建都支持）](#自定义Cell（纯代码和Xib创建都支持）)
+    - [自定义Cell（纯代码和Xib创建都支持）](#自定义Cell（纯代码和Xib创建都支持）)
 - [Contact](#contact)
 - [License](#license)
+
+
+# Implementation
+
+1. collectionView的cell显示两倍数量的图片，展示图片分为两组，默认显示第二组的第一张
+2. 左滑collectionView到第二组最后一张，即最后一个cell时，设置scrollView的contentOffset显示第一组的最后一张，继续左滑，实现了无限左滑
+3. 右滑collectionView到第一组第一张，即第一cell时，设置scrollView的contentOffset显示第二组的第一张，继续右滑，实现了无限右滑
+4. 由2，3实现无限循环
 
 
 # Features
