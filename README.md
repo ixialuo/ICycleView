@@ -3,6 +3,19 @@
 ICycleView是一个用于Swift语言中轻量级图片无限轮播
 
 
+# Content
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [CocoaPods](#cocoapods)
+- [Usage](#usage)
+    - [默认滚动视图](#默认滚动视图)
+    - [自定义图片宽度和指示器的位置和颜色](#自定义图片宽度和指示器的位置和颜色)
+    - [自定义Cell(纯代码和Xib创建都支持)](#自定义Cell(纯代码和Xib创建都支持))
+- [Contact](#contact)
+- [License](#license)
+
+
 # Features
 
 * 支持单张图片
@@ -32,7 +45,7 @@ pod 'ICycleView', '~> 1.0.0'
 2：`$rm ~/Library/Caches/CocoaPods/search_index.json`
 
 
-# Example
+# Usage
 
 #### 默认滚动视图
 ```swift 
