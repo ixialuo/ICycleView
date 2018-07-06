@@ -22,7 +22,7 @@ pod 'ICycleView', '~> 1.0.0'
 ```
 在终端 `pod search 'ICycleView'` 时出现 `Unable to find a pod with name, author, summary, or description matching 'ICycleView'` 错误<br>
 请在终端运行<br>
-1：`pod setup<br>`
+1：`pod setup`<br>
 2：`$rm ~/Library/Caches/CocoaPods/search_index.json.`
 
 
