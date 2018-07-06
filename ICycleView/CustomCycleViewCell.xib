@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="gTV-IL-0wX" customClass="CustomCycleViewCell" customModule="ICycleView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-V2-5Gl">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-RP-JEy">
+                        <rect key="frame" x="300" y="0.0" width="114" height="100"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cfd-V2-5Gl" secondAttribute="bottom" id="50x-XV-aTl"/>
+                <constraint firstItem="cfd-V2-5Gl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KfH-AR-Spo"/>
+                <constraint firstItem="iEx-RP-JEy" firstAttribute="leading" secondItem="cfd-V2-5Gl" secondAttribute="trailing" id="Vpe-In-jm2"/>
+                <constraint firstItem="iEx-RP-JEy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="agG-gS-rrd"/>
+                <constraint firstItem="cfd-V2-5Gl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fCh-ML-Kjx"/>
+                <constraint firstAttribute="bottom" secondItem="iEx-RP-JEy" secondAttribute="bottom" id="gdO-9A-JRH"/>
+                <constraint firstAttribute="trailing" secondItem="iEx-RP-JEy" secondAttribute="trailing" id="jxA-QM-f6r"/>
+                <constraint firstItem="cfd-V2-5Gl" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" multiplier="300:414" id="wmO-r8-f34"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="cfd-V2-5Gl" id="WRs-Lc-eAF"/>
+                <outlet property="titleLab" destination="iEx-RP-JEy" id="HxA-wM-6Ie"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="40"/>
+        </collectionViewCell>
+    </objects>
+</document>

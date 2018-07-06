@@ -13,6 +13,9 @@
 		CE0338C920EE6759002A5A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0338C720EE6759002A5A3A /* Main.storyboard */; };
 		CE0338CB20EE6759002A5A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0338CA20EE6759002A5A3A /* Assets.xcassets */; };
 		CE0338CE20EE6759002A5A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0338CC20EE6759002A5A3A /* LaunchScreen.storyboard */; };
+		CE0338D720EE6A84002A5A3A /* ICycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0338D620EE6A84002A5A3A /* ICycleView.swift */; };
+		CE973EE120EF2F6600189621 /* CustomCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE973EDF20EF2F6600189621 /* CustomCycleViewCell.swift */; };
+		CE973EE220EF2F6600189621 /* CustomCycleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE973EE020EF2F6600189621 /* CustomCycleViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		CE0338CA20EE6759002A5A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0338CD20EE6759002A5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0338CF20EE6759002A5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0338D620EE6A84002A5A3A /* ICycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICycleView.swift; sourceTree = "<group>"; };
+		CE973EDF20EF2F6600189621 /* CustomCycleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCycleViewCell.swift; sourceTree = "<group>"; };
+		CE973EE020EF2F6600189621 /* CustomCycleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCycleViewCell.xib; sourceTree = "<group>"; };
 		F35DCF74642D915FE1BFCEFC /* Pods_ICycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,6 +66,7 @@
 		CE0338B720EE6759002A5A3A = {
 			isa = PBXGroup;
 			children = (
+				CE0338D520EE6A4B002A5A3A /* Sources */,
 				CE0338C220EE6759002A5A3A /* ICycleView */,
 				CE0338C120EE6759002A5A3A /* Products */,
 				9E35EBAE7A2A328003B98DF1 /* Pods */,
@@ -80,12 +87,22 @@
 			children = (
 				CE0338C320EE6759002A5A3A /* AppDelegate.swift */,
 				CE0338C520EE6759002A5A3A /* ViewController.swift */,
+				CE973EDF20EF2F6600189621 /* CustomCycleViewCell.swift */,
+				CE973EE020EF2F6600189621 /* CustomCycleViewCell.xib */,
 				CE0338C720EE6759002A5A3A /* Main.storyboard */,
 				CE0338CA20EE6759002A5A3A /* Assets.xcassets */,
 				CE0338CC20EE6759002A5A3A /* LaunchScreen.storyboard */,
 				CE0338CF20EE6759002A5A3A /* Info.plist */,
 			);
 			path = ICycleView;
+			sourceTree = "<group>";
+		};
+		CE0338D520EE6A4B002A5A3A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CE0338D620EE6A84002A5A3A /* ICycleView.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +167,7 @@
 			files = (
 				CE0338CE20EE6759002A5A3A /* LaunchScreen.storyboard in Resources */,
 				CE0338CB20EE6759002A5A3A /* Assets.xcassets in Resources */,
+				CE973EE220EF2F6600189621 /* CustomCycleViewCell.xib in Resources */,
 				CE0338C920EE6759002A5A3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +220,8 @@
 			files = (
 				CE0338C620EE6759002A5A3A /* ViewController.swift in Sources */,
 				CE0338C420EE6759002A5A3A /* AppDelegate.swift in Sources */,
+				CE973EE120EF2F6600189621 /* CustomCycleViewCell.swift in Sources */,
+				CE0338D720EE6A84002A5A3A /* ICycleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X2HSWDZCR;
 				INFOPLIST_FILE = ICycleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X2HSWDZCR;
 				INFOPLIST_FILE = ICycleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
