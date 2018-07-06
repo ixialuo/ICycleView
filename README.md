@@ -13,6 +13,12 @@ ICycleView是一个用于Swift语言中轻量级图片无限轮播
 * 支持图片点击回调
 * 支持图片滚动回调
 
+## CocoaPods
+
+```ruby
+pod 'ICycleView', '~> 1.0.0' 
+```
+
 
 ## Example
 
