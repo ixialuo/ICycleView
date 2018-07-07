@@ -1,6 +1,6 @@
 # ICycleView
 
-ICycleView是一个基于UICollectionView封装的轻量级图片无限轮播控件
+ICycleView是一个基于UICollectionView实现的轻量级无限轮播图
 
 
 # Content
