@@ -5,9 +5,6 @@ ICycleView是一个基于UICollectionView封装的轻量级图片无限轮播控
 
 # Content
 
-- [Implementation](#implementation)
-    - [实现原理](#实现原理)
-    - [主要代码](#主要代码)
 - [Features](#features)
 - [Requirements](#requirements)
 - [CocoaPods](#cocoapods)
@@ -15,35 +12,12 @@ ICycleView是一个基于UICollectionView封装的轻量级图片无限轮播控
     - [默认滚动视图](#默认滚动视图)
     - [自定义图片宽度和指示器的位置和颜色](#自定义图片宽度和指示器的位置和颜色)
     - [自定义Cell-纯代码和Xib创建都支持](#自定义Cell-纯代码和Xib创建都支持)
+- [Implementation](#implementation)
+    - [实现原理](#实现原理)
+    - [主要代码](#主要代码)
 - [Contact](#contact)
 - [License](#license)
 
-
-# Implementation
-
-#### 实现原理
-1. collectionView的cell显示两倍数量的图片，展示图片分为两组，默认显示第二组的第一张
-2. 左滑collectionView到第二组最后一张，即最后一个cell时，设置scrollView的contentOffset显示第一组的最后一张，继续左滑，实现了无限左滑
-3. 右滑collectionView到第一组第一张，即第一cell时，设置scrollView的contentOffset显示第二组的第一张，继续右滑，实现了无限右滑
-4. 由2，3实现无限循环
-
-#### 主要代码
-
-```swift
-// MARK: - 监听手动减速完成(停止滚动)
-public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-    let offsetX = scrollView.contentOffset.x
-    let page = Int(offsetX / bounds.size.width)
-    let itemsCount = collectionView.numberOfItems(inSection: 0)
-    if page == 0 {
-        // 第一页
-        collectionView.contentOffset = CGPoint(x: offsetX + CGFloat(pictures.count) * bounds.size.width, y: 0)
-    } else if page == itemsCount - 1 {
-        // 最后一页
-        collectionView.contentOffset = CGPoint(x: offsetX - CGFloat(pictures.count) * bounds.size.width, y: 0)
-    }
-}
-```
 
 # Features
 
@@ -77,6 +51,7 @@ pod 'ICycleView', '~> 1.0.0'
 # Usage
 
 #### 默认滚动视图
+
 ```swift 
 // 惰性初始化滚动视图
 lazy var defaultCycleView: ICycleView = {
@@ -90,6 +65,7 @@ defaultCycleView.pictures = pictures
 ```
 
 #### 自定义图片宽度和指示器的位置和颜色
+
 ```swift
 // 惰性初始化滚动视图
 lazy var customPagetrolPositionnCycleView: ICycleView = {
@@ -108,6 +84,7 @@ customPagetrolPositionnCycleView.pageControlStyle = .right(trailing: 30*scaleFor
 ```
 
 #### 自定义Cell-纯代码和Xib创建都支持
+
 ```swift
 // 惰性初始化滚动视图
 lazy var customPictureCellCycleView: ICycleView = {
@@ -147,6 +124,33 @@ extension ViewController: ICycleViewDelegate {
         return cell
     }
 
+}
+```
+
+
+# Implementation
+
+#### 实现原理
+1. collectionView的cell显示两倍数量的图片，展示图片分为两组，默认显示第二组的第一张
+2. 左滑collectionView到第二组最后一张，即最后一个cell时，设置scrollView的contentOffset显示第一组的最后一张，继续左滑，实现了无限左滑
+3. 右滑collectionView到第一组第一张，即第一cell时，设置scrollView的contentOffset显示第二组的第一张，继续右滑，实现了无限右滑
+4. 由2，3实现无限循环
+
+#### 主要代码
+
+```swift
+// MARK: - 监听手动减速完成(停止滚动)
+public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    let offsetX = scrollView.contentOffset.x
+    let page = Int(offsetX / bounds.size.width)
+    let itemsCount = collectionView.numberOfItems(inSection: 0)
+    if page == 0 {
+        // 第一页
+        collectionView.contentOffset = CGPoint(x: offsetX + CGFloat(pictures.count) * bounds.size.width, y: 0)
+    } else if page == itemsCount - 1 {
+        // 最后一页
+        collectionView.contentOffset = CGPoint(x: offsetX - CGFloat(pictures.count) * bounds.size.width, y: 0)
+    }
 }
 ```
 
