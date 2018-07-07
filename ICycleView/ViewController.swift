@@ -20,14 +20,14 @@ class ViewController: UIViewController {
     
     // 默认滚动视图
     lazy var defaultCycleView: ICycleView = {
-        let cycleView = ICycleView(frame: CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: 130*scaleForPlus))
+        let cycleView = ICycleView(frame: CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: 130*scaleForPlus))
         view.addSubview(cycleView)
         return cycleView
     }()
     
     // 自定义图片宽度和指示器的位置和颜色
     lazy var customPagetrolPositionnCycleView: ICycleView = {
-        let cycleView = ICycleView(frame: CGRect(x: 0, y: 190, width: UIScreen.main.bounds.width, height: 130*scaleForPlus))
+        let cycleView = ICycleView(frame: CGRect(x: 0, y: 220, width: UIScreen.main.bounds.width, height: 130*scaleForPlus))
         cycleView.imgViewWidth = 374*scaleForPlus
         cycleView.pageIndicatorTintColor = .green
         view.addSubview(cycleView)
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     // 自定义Cell(纯代码和Xib创建都支持)
     lazy var customPictureCellCycleView: ICycleView = {
-        let cycleView = ICycleView(frame: CGRect(x: 0, y: 345, width: UIScreen.main.bounds.width, height: 130*scaleForPlus))
+        let cycleView = ICycleView(frame: CGRect(x: 0, y: 385, width: UIScreen.main.bounds.width, height: 130*scaleForPlus))
         cycleView.register([UINib.init(nibName: "CustomCycleViewCell", bundle: nil)], identifiers: ["CustomCell"])
         cycleView.delegate = self
         view.addSubview(cycleView)

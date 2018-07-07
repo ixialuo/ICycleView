@@ -246,7 +246,7 @@ extension ICycleView: UICollectionViewDataSource, UICollectionViewDelegate {
 }
 
 
-// MARK: - 循环轮播处理
+// MARK: - 循环轮播实现
 extension ICycleView {
     
     // 定时器方法，更新Cell位置
