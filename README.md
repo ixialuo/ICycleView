@@ -130,7 +130,7 @@ extension ViewController: ICycleViewDelegate {
 
 # Implementation
 
-#### 实现原理
+#### 实现原理 [[详细]](https://www.jianshu.com/p/2b5ff0cb9b06)
 1. collectionView的cell显示两倍数量的图片，展示图片分为两组，默认显示第二组的第一张
 2. 左滑collectionView到第二组最后一张，即最后一个cell时，设置scrollView的contentOffset显示第一组的最后一张，继续左滑，实现了无限左滑
 3. 右滑collectionView到第一组第一张，即第一cell时，设置scrollView的contentOffset显示第二组的第一张，继续右滑，实现了无限右滑
