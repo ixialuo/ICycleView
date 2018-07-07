@@ -2,6 +2,8 @@
 
 ICycleView是一个基于UICollectionView实现的轻量级无限轮播图
 
+<br>
+<img src="DemoResources/icycleview.gif" width="300" height="600" title="效果图">
 
 # Content
 
@@ -52,6 +54,8 @@ pod 'ICycleView', '~> 1.0.0'
 
 #### 默认滚动视图
 
+<img src="DemoResources/default_icycleview.gif" title="默认滚动视图">
+
 ```swift 
 // 惰性初始化滚动视图
 lazy var defaultCycleView: ICycleView = {
@@ -64,7 +68,10 @@ lazy var defaultCycleView: ICycleView = {
 defaultCycleView.pictures = pictures
 ```
 
+
 #### 自定义图片宽度和指示器的位置和颜色
+
+<img src="DemoResources/custom_pagecontrol_icycleview.gif" title="自定义图片宽度和指示器的位置和颜色">
 
 ```swift
 // 惰性初始化滚动视图
@@ -84,6 +91,8 @@ customPagetrolPositionnCycleView.pageControlStyle = .right(trailing: 30*scaleFor
 ```
 
 #### 自定义Cell-纯代码和Xib创建都支持
+
+<img src="DemoResources/custom_cell_icycleview.gif" title="自定义Cell-纯代码和Xib创建都支持">
 
 ```swift
 // 惰性初始化滚动视图
