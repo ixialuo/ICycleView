@@ -5,6 +5,7 @@ ICycleView是一个基于UICollectionView实现的轻量级无限轮播图
 <br>
 <img src="DemoResources/icycleview.gif" width="300" height="600" title="效果图">
 
+
 # Content
 
 - [Features](#features)
