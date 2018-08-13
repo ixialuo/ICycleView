@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
     
     // 图片
-    let pictures = ["http://goodreading.mobi/StudentApi/UserFiles/Banner/Student/Home/banner_tz.png", "http://goodreading.mobi/StudentApi/UserFiles/Banner/Student/Home/banner_dzsyy.png", "http://goodreading.mobi/studentapi/userfiles/banner/student/home/studenttj.png"]
+    let pictures = ["https://goodreading.mobi/StudentApi/UserFiles/Banner/Student/Home/banner_tz.png", "https://goodreading.mobi/StudentApi/UserFiles/Banner/Student/Home/banner_dzsyy.png", "https://goodreading.mobi/studentapi/userfiles/banner/student/home/studenttj.png"]
     
     // 默认滚动视图
     lazy var defaultCycleView: ICycleView = {

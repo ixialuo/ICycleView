@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ICycleView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "用UICollectionView实现的轮播图，支持单张图片、自定义cell等"
   s.homepage     = "https://github.com/ixialuo/ICycleView"
   s.license      = { :type => "MIT", :file => "LICENSE" }

@@ -253,7 +253,11 @@ extension ICycleView {
     @objc private func updateCollectionViewAutoScrolling() {
         if let indexPath = collectionView.indexPathsForVisibleItems.last {
             let nextPath = IndexPath(item: indexPath.item + 1, section: indexPath.section)
-            collectionView.scrollToItem(at: nextPath, at: .centeredHorizontally, animated: true)
+            if indexPath.item + 1 < pictures.count * 2 {
+                collectionView.scrollToItem(at: nextPath, at: .centeredHorizontally, animated: true)
+            } else {
+                print("ICycleView 定时器方法，更新Cell位置 \(nextPath)")
+            }
         }
     }
     
